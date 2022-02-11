@@ -1,0 +1,168 @@
+{% extends "tiendaWebApp/layout.html" %}
+{% load static %}
+{% block title %}Ruzon{% endblock %}
+{% block style %} <link rel="stylesheet" href="{% static 'tiendaWebApp/css/styleHome.css' %}"> {% endblock %}
+
+{% block body %} 
+    <section class="s-home one">
+        
+        <div class="img-h-b"></div>
+        <img class="imgHomeOne" src="{% static 'tiendaWebApp/img/imgHome.png' %}" alt="model one">
+        <div class="Intro">
+  
+
+            <p class="ph1">YRZN</p>
+            <h3>Your store, always for you<br>Style and comfort.</h3>
+            
+            <p class="ph2">exclusive designs, the ultimate design expression</p>
+        <button>Start now</button>
+        </div>
+
+    </section>
+    <section class="s-home two">
+        <p class="s2-p">Recommended</p>
+
+        <div class="sh2GridCards">
+
+                <div class="cardHomeOne">
+                    <p class="price">$48.99 USD</p>
+        
+                    <i class='bx bx-info-circle'></i>
+                    <p class="text">
+                        Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette. Bow detail metallic eyelets leather lining luxurious finish classic courts formal slingback square toe contrasting cap. Lace up fastening bow detailing high stiletto heel leather lining beautiful lace upper elegant peep toe t-bar strap. Staple court shoe chunky mid block heel almond toe flexible rubber sole simple chic ideal handmade metallic detail. Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous.
+                    </p>
+        
+                    <div class="imgBx">
+                        <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/jHome2.png' %}" alt="a pair of blue and red ASICS sneakers">
+                        <h2>Nike</h2>
+                        <p>Jordan Flight Origin 4</p>
+                    </div>
+                    <div class="contentBx  ">
+                        
+                        <div class="size">
+                            <h3>Size:</h3>
+                            <span>34</span>
+                            <span>36</span>
+                            <span>38</span>
+                            <span>40</span>
+                            <span>42</span>
+                        </div>
+                        <div class="color">
+                            <h3>Color:</h3>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <button> Add to Cart</button>
+                    </div>
+                </div>
+            
+            <div class="cardHomeOne">
+                <p class="price">$55.99 USD</p>
+                <i class='bx bx-info-circle'></i>
+                <p class="text">
+                    Effortless comfortable full leather lining eye-catching unique detail to the toe low 'cut-away' sides clean and sleek. Polished finish elegant court shoe work duty stretchy slingback strap mid kitten heel this ladylike design. Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette. Effortless comfortable full leather lining eye-catching unique detail to the toe low 'cut-away' sides clean and sleek.
+                </p>
+                <div class="imgBx">
+                    <img class="sh2CardImg2" src="{% static 'tiendaWebApp/img/jHome1.png' %}" alt="a pair of white Adidas sneakers with red and blue trim">
+                    <h2 class="sh2CardImg2H2">Jordan sweatshirt</h2>
+                    
+                </div>
+                <div class="contentBx">
+                   
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cardHomeOne">
+                <p class="price">$40.99 USD</p>
+                <i class='bx bx-info-circle' id="iconbx"></i>
+                <p class="text">
+                    Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette. Bow detail metallic eyelets leather lining luxurious finish classic courts formal slingback square toe contrasting cap. Lace up fastening bow detailing high stiletto heel leather lining beautiful lace upper elegant peep toe t-bar strap. Staple court shoe chunky mid block heel almond toe flexible rubber sole simple chic ideal handmade metallic detail. Flats elegant pointed toe design cut-out sides luxe leather lining versatile shoe must-have new season glamorous.
+                </p>
+                <div class="imgBx">
+                    <img class="sh2CardImg3" src="{% static 'tiendaWebApp/img/jHome3.png' %}" alt="a New Balance sneaker in olive drab with a black logo">
+                    <h2>Nike</h2>
+                    <p>Air Jordan 9</p>
+                </div>
+                
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+    
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="contentCardH3">
+            <div class="cardh3">
+                <img src="{% static 'tiendaWebApp/img/homeimgs3.png'%}" alt="img promotions">
+                <div class="text-cardh3">
+                    <h2>New year promotions</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate, ipsa iste? Vel tempore aut corporis eveniet blanditiis minima eaque asperiores.</p>
+                    <button>See offers</button>
+                </div>
+            </div>
+        </div>
+        <div class="trademarksContainer">
+            <div class="cardTrademarks one">
+                <img src="{% static 'tiendaWebApp/img/hoodie2.png'%}" alt="img promotions">
+                <div class="container-card-trademarks">
+                    <div class="textMovable">
+                        <h2>Exclusive designs</h2>
+                    </div>
+                    <div class="text-cardTrademarks">
+                        <h2>Exclusive designs</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, dolor!</p>
+                    </div>
+                </div>
+                </div>
+            <div class="cardTrademarks two">
+                <img src="{% static 'tiendaWebApp/img/hoodie3.png'%}" alt="img promotions">
+                <div class="container-card-trademarks">
+                    <div class="textMovable">
+                        <h2>Exclusive designs</h2>
+                    </div>
+                    <div class="text-cardTrademarks">
+                        <h2>Exclusive designs</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, dolor!</p>
+                    </div>
+                </div>
+                </div>
+       
+        </div>
+    </section>
+
+        
+        
+
+            
+
+{% endblock %}

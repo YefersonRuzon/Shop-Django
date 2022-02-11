@@ -1,0 +1,591 @@
+/*-----------------------------------home---------------------------------------------*/
+
+.s-home{
+    width: 100vw;
+    height: 100vh;
+    
+    
+  }
+  .s-home.one{
+    background-color: #ffffff;
+  }
+  .imgHomeOne{
+    width: 38%;
+    position: absolute;
+    right: 10vw;
+    top: 22vh;
+    transform: rotate(-28deg);
+    z-index: 0;
+  }
+  .img-h-b{
+    z-index: 0;
+    width: 33vw;
+    height: 33vw;
+    position: absolute;
+    right: 11vw;
+    top: 17vh;
+    background-color: #000000;
+    border-radius: 50%;
+    box-shadow: #808080 5px 5px 15px;
+  }
+  
+  .Intro {
+    padding-top: 32vh;
+    padding-left: 7vw;
+    z-index: 1;
+    transform: scale(100%);
+  }
+  .Intro .ph1{
+    font-family: megrim;
+    font-size: 2vw;
+    font-weight: bolder;
+  } 
+  .Intro h3{
+    font-size: 2.2vw;;
+    font-weight: bold;
+    color: #000000;
+    
+  }
+  .Intro .ph2{
+    font-size: 1.4vw;
+  }
+  .Intro button{
+    width: 10vw;
+    height: 3vw;
+    margin-top: 6vw;
+    font-size: 1.2vw;
+    font-weight: bolder;
+    border-radius: 12px;
+    border: 2px solid black;
+    cursor: none;
+    transition: all ease .5s;
+    align-items: center;
+    background-color: #fff;
+  }
+  .Intro button:hover{
+    background: black;
+    color: #ffffff;
+    cursor: none;
+    box-shadow: black 0px 0px 40px;
+    transform: translateY(-3px);
+  }
+  
+  .s2-p{
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    transform: translateY(40px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all ease .5s;
+  }
+  .s2-p:hover{
+    font-size: 1.6vw;
+  }
+  .s2-p::before{
+    content: '';
+    width: 5vw;
+    height: .3vw;
+    border-radius: 20px;
+    position: absolute;
+    margin-top: -1vw;
+    background-color: #000000;
+    margin-left: -5px;
+  }
+  
+  .sh2GridCards{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    transform: translateY(120px);
+    position: relative;
+  }
+  .cardHomeOne{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 26vw;
+    height: 35vw;
+    border-radius: 25px;
+    background: #252525;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+      box-shadow: #a8a8a8 -10px 10px 10px,#a8a8a8 10px 10px 10px; 
+      overflow: hidden;
+    margin-bottom: 6vh;
+  }
+  
+  .cardHomeOne::before{
+    
+    content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      clip-path: circle(12vw at 70% 10%);
+      transition: 0.5s ease-in-out;
+  }
+  .cardHomeOne:hover:before{
+    
+    clip-path: circle(18vw at 100% -20%);
+  }
+  .cardHomeOne:after {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: -20%;
+      font-size: 12em;
+      font-weight: 800;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.04);
+  }
+  
+  .cardHomeOne .price {
+      position: absolute;
+      top: 0.8vw;
+      right: 0.8vw;
+      backdrop-filter: blur(8px);
+      background-color: rgba(0, 0, 0, 0.112);
+      box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+      border: 0px rgba(255, 255, 255, 0.4) solid;
+      border-bottom: 0px rgba(40, 40, 40, 0.35) solid;
+      border-right: 0px rgba(40, 40, 40, 0.35) solid;
+      padding: .5vw .8vw;
+    border-radius: 3vw;
+      font-size: .9vw;
+      border-radius: 4px;
+  }
+  
+  .cardHomeOne .imgBx {
+      position: absolute;
+      top: 15vw;
+      transform: translateY(-3vw);
+      z-index: 1;
+      width: 100%;
+      height: 50%;
+      transition: 0.5s ease-in-out;
+  }
+  
+  .cardHomeOne:hover .imgBx {
+      
+      transform: translateY(-11vw);
+  }
+  
+  .cardHomeOne .imgBx h2{
+    font-size: 1.5vw;
+  } 
+  .cardHomeOne .imgBx p{
+    font-size: .9vw;
+    width: 100%;
+  } 
+  .cardHomeOne .contentBx {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0px;
+      text-align: center;
+      transition: 1s;
+      z-index: 10;
+  }
+  .cardHomeOne:hover .contentBx {
+      height: 10.5vw;
+  }
+  .cardHomeOne .contentBx h2 {
+      position: relative;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #ffffff;
+    
+  }
+  .cardHomeOne .contentBx .size,
+  .cardHomeOne .contentBx .color {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 8px 20px;
+      transition: 0.5s;
+      opacity: 0;
+      visibility: hidden;
+  }
+  .cardHomeOne:hover .contentBx .size {
+      opacity: 1;
+      visibility: visible;
+      
+  }
+  .cardHomeOne:hover .contentBx .color {
+      opacity: 1;
+      visibility: visible;
+  }
+  .cardHomeOne .contentBx .size h3,
+  .cardHomeOne .contentBx .color h3 {
+      color: #fff;
+      font-weight: 300;
+      font-size: 1.2vw;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-right: 10px;
+  }
+  .cardHomeOne .contentBx .size span {
+      width: 1.5vw;
+      height: 1.5vw;
+      text-align: center;
+      font-size: 1vw;
+      display: inline-block;
+      color: #111;
+      background: #fff;
+      margin: 0 5px;
+      transition: 0.5s;
+      border-radius: 4px;
+    transition: all ease .5s;
+  }
+  .cardHomeOne .contentBx .size span:hover{
+    background: #000;
+    color: #fff;
+  }
+  .cardHomeOne .contentBx .color span {
+      width: 1.5vw;
+      height: 1.5vw;
+      background: rgb(0, 0, 0);
+      border-radius: 50%;
+      margin: 0 5px;
+  }
+  
+  .cardHomeOne .contentBx .color span:nth-child(2) {
+      background: #ffffff;
+  }
+  .cardHomeOne .contentBx .color span:nth-child(3) {
+      background: rgb(255, 0, 0);
+  }
+  .cardHomeOne .contentBx .color span:nth-child(4) {
+      background: rgb(0, 63, 199);
+  }
+  .cardHomeOne .contentBx button {
+      display: inline-block;
+      padding: 0.6vw 1.1vw;
+      background: #fff;
+      border-radius: 4px;
+      margin-top: 1vw;
+      text-decoration: none;
+      font-weight: 600;
+      color: rgb(31, 31, 31);
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 0.5s;
+      border: none;
+    font-size: 1vw;
+  }
+  .cardHomeOne:hover .contentBx button {
+      opacity: 1;
+      transform: translateY(0px);
+    cursor: none;
+      
+  }
+  .contentBx button:hover{
+    color: #fff;
+    background: #000000;
+    cursor: none;
+  }
+  .info {
+      position: absolute;
+      top: 1em;
+      left: 1em;
+      color: #fff;
+      z-index: 300;
+  }
+  
+  .text {
+      display: none;
+      color: #fff;
+      padding: 2em;
+      z-index: 299;
+      position: relative;
+      backdrop-filter: blur(20px);
+      background-color: rgba(0, 0, 0, 0.2);
+      height: 100%;
+      text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+  }
+  .info:hover + .text {
+      display: block;
+  }
+  .cardHomeOne .imgBx p{
+    transition: all ease .3s;
+    color: #bdbdbd;
+    width: 15vw;
+    display: block;
+    margin: auto;
+  }
+  .cardHomeOne:hover .imgBx p{
+    opacity: 0;
+  }
+  
+  .sh2CardImg2{
+    width: 14vw;
+    z-index: 1;
+    transition: all ease .5s;
+    transform: translateY(-17%);
+  }
+  .cardHomeOne:hover .sh2CardImg2H2{
+    opacity: 0;
+  }
+  .sh2CardImg2H2{
+    transform: translateY(-4vw);
+    transition: all ease .5s;
+  }
+  .cardHomeOne:hover .sh2CardImg2{
+    transform: translateY(-15%);
+  }
+  .cardHomeOne .imgBx .sh2CardImg1, .cardHomeOne .imgBx .sh2CardImg3{
+    width: 23vw;
+    transform: rotateX(180deg) rotate(180deg);
+  }
+  .sh2CardImg1{
+    margin-bottom: 1.8vw;
+  }
+  .cardHomeOne .imgBx .sh2CardImg3{
+    margin-bottom: -50px;
+  }
+  .iconbx{
+    color: #fff;
+    position: absolute;
+    left: 0;
+  }
+  .s-home.two{
+    width: 100%;
+    min-height: 120vw;
+    
+  }
+  
+  .contentCardH3{
+    width: 95%;
+    height: 30vw;
+    
+    background: #252525;
+    display: block;
+    margin: 10vw auto 4vw;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  
+  .contentCardH3::before{
+    
+    content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      clip-path: circle(30vw at 90% 10%);
+      transition: 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .contentCardH3:hover:before{
+    
+    clip-path: circle(33vw at 100% -20%);
+  }
+  .contentCardH3{
+    z-index: 2;
+    position: relative;
+    box-shadow: #a8a8a8 -10px 10px 10px,#a8a8a8 10px 10px 10px; 
+  }
+  .contentCardH3 img{
+    position: relative;
+    width: 30vw;
+    display: block;
+    margin:  auto;
+    z-index: 2;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+  }
+  .contentCardH3:hover img{
+    transform: translateX(20vw);
+  }
+  .text-cardh3{
+    position: absolute;
+    top: 100vw;
+    left: 0%;
+    transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2vw;
+  }
+  .contentCardH3:hover .text-cardh3{
+    position: absolute;
+    top: 30%;
+    left: 2vw;
+    
+  }
+  .text-cardh3 h2{
+    padding-bottom: 2vw;
+    align-items: center;
+    font-weight: bolder;
+    -webkit-text-stroke: #fff 2px;
+    text-shadow: #000 -10px 10px 10px;
+  }
+  
+  .text-cardh3 p{
+    color: #cccccc;
+    font-weight: bolder;
+    
+  }
+  .text-cardh3  button{
+    margin-top: 4vw;
+    font-size: 1.2vw;
+    padding: .5vw 2vw;
+    border-radius: 12px;
+    border: 2px solid #000;
+    background: #ffffff;
+    cursor: none;
+    transition: all ease 1s;
+  }
+  .text-cardh3  button:hover{
+    background: #000;
+    color: #fff;
+    border: 2px #fff solid;
+    box-shadow: rgb(255, 255, 255) 0px 0px 40px;
+  }
+  .trademarksContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    overflow: hidden;
+    margin-bottom: 3vw;
+    padding-bottom: 3vw;
+  }
+  .cardTrademarks{
+    background: #252525;
+    height: 30vw;
+    width: 46vw;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: #a8a8a8 -10px 10px 10px,#a8a8a8 10px 10px 10px; 
+    overflow: hidden;
+    
+  }
+  
+  .cardTrademarks::before{
+    
+    content: " ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000000;
+      clip-path: circle(20vw at 90% 10%);
+      transition: 0.5s ease-in-out;
+    z-index: 1;
+  }
+  .cardTrademarks.one:before{
+    clip-path: circle(20vw at 10% 10%);
+  }
+  .cardTrademarks.one:hover:before{
+    
+    clip-path: circle(23vw at 0% -20%);
+  }
+  .cardTrademarks:hover:before{
+    
+    clip-path: circle(23vw at 100% -20%);
+  }
+  .cardTrademarks img{
+    width: 22vw;
+    display: block;
+    position: relative;
+    margin: 2vw auto;
+    z-index: 2 ;
+    transition: all ease .5s;
+  
+  }
+  .cardTrademarks.two:hover img{
+    transform: translateX(10vw);
+  }
+  .cardTrademarks.one:hover img{
+    transform: translateX(-10vw);
+  }
+  .text-cardTrademarks{
+    width: 20vw;
+    font-size: 1.2vw;
+    overflow: hidden;
+    text-align: center;
+    transition: all ease .5s;
+  }
+  .text-cardTrademarks h2{
+    font-size: 1.7vw;
+  }
+  .container-card-trademarks{
+    display: flex;
+  }
+  .cardTrademarks.one .text-cardTrademarks{
+    transform:translateX(45vw) translateY(-20vw);
+    color: #ffffff;
+    position: relative;
+  }
+  .cardTrademarks.two .text-cardTrademarks{
+    transform:translateX(-32vw) translateY(-20.5vw);
+    color: #ffffff;
+    position: relative;
+  }
+  .cardTrademarks.one:hover .text-cardTrademarks{
+    transform:translateX(25vw) translateY(-20vw);
+  }
+  
+  
+  .cardTrademarks.two:hover .text-cardTrademarks{
+    transform:translateX(-0vw) translateY(-20.5vw);
+  }
+  
+  .cardTrademarks.one .textMovable{
+    position: absolute;
+    top: 14vw;
+    right: -6vw;
+    color: #fff;
+    transform: rotate(-90deg);
+    transition: all ease .5s;
+    font-size: 1.2vw;
+  }
+  
+  .cardTrademarks.one:hover .textMovable{
+    transform:rotate(-90deg) translateY(10vw);
+  }
+  .cardTrademarks.two .textMovable{
+    position: absolute;
+    top: 14vw;
+    left:-6vw;
+    color: #fff;
+    transform: rotate(90deg);
+    transition: all ease .5s;
+    font-size: 1.2vw;
+  }
+  .cardTrademarks.two:hover .textMovable{
+    transform: rotate(90deg) translateY(10vw);
+  }
+  .text-cardTrademarks button{
+    font-size: 1vw;
+    padding: .5vw 2vw ;
+    border-radius: 10px;
+    transform: translateY(7vw);
+    border: 2px solid #000;
+    background: transparent;
+    font-weight: bold;
+    cursor: none;
+    box-shadow: #a8a8a8 -5px 10px 10px,#a8a8a8 5px 10px 10px; 
+    transition: all ease .5s;
+  
+  }
+  .text-cardTrademarks button:hover{
+    background: #000;
+    color: #fff;
+    box-shadow: #252525 -5px 10px 10px,#252525 5px 10px 10px; 
+  
+  }

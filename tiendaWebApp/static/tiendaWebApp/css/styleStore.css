@@ -1,0 +1,279 @@
+.formSearch{
+    padding-top: 5vw;
+    width: 100%;
+
+}
+.inputGroup{
+    display: block;
+    margin: auto;
+    width: 40vw;
+    overflow: hidden;
+}
+.inputGroupAppend{
+    display: flex;
+}
+.btnSearchSubmit{
+    width: 5vw;
+    height: 2.5vw;
+    margin-left: 42vw;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #252525;
+    color: #fff;
+    border: none;
+    font-size: 1.5vw;
+    cursor: none;
+    transition: all ease .5s;
+}
+.btnSearchSubmit:hover{
+    background: #fff;
+    color: #000;
+    border: .2vw solid #000;
+}
+.search-filter{
+    cursor: none;
+    width: 40vw;
+    height: 2.5vw;
+    border-radius: 10px;
+    text-align: center;
+    border: #252525 .2vw solid;
+    background: #252525;
+    color: #fff;
+    font-size: 1.25vw;
+    transition: all ease .5s;
+}
+.search-filter:hover{
+    background: #fff;
+    color: #000;
+}
+.cardsContent{
+    
+    padding-bottom: 5vw;
+}
+.cardsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ; 
+}
+.cards{
+    display: block;
+    margin: 4vw auto 0;
+    width: 20vw;
+    height: 30vw;
+    overflow: hidden;
+    background: #252525;
+    border-radius: 20px;
+    position: relative;
+}
+.cards:before{
+    
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    clip-path: circle(10vw at 90% 0%);
+    transition: 0.5s ease;
+    z-index: 0;
+  }
+.cards:hover:before{
+    
+    clip-path: circle(15vw at 120% -20%);
+  }
+.price{
+    background: #252525;
+    padding: .5vw 1vw;
+    position: absolute;
+    border-radius: 10px;
+    top: .5vw;
+    right: .5vw;
+    z-index: 1;
+    color: #fff;
+    font-size: .9vw;
+}
+.imgContent{
+    text-align: center;
+    margin-top: 10vw;
+    z-index: 2;
+    width: 18vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    transition: all ease .5s;
+    color: #fff;
+    position: relative;
+}
+.imgContent h2{
+    font-size: 1.2vw;
+}
+.imgContent p {
+    color: #bbbbbb;
+    font-size: .8vw;
+}
+.cards:hover .imgContent{
+    margin-top: 4vw;
+}
+.imgContent img{
+    width: 35vh;
+    display: block ;
+    margin:auto;
+    margin-bottom: 2vw;
+}
+.imgContent img.hoodie{
+    width: 14vw;
+    transform: translateY(-4vw);
+    margin-bottom: -3vw;
+}
+.contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+.cards:hover .contentBx {
+    height: 10.5vw;
+}
+.cards .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+  
+}
+.cards .contentBx .size,
+.cards .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.cards:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.cards:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+}
+.cards .contentBx .size h3,
+.cards .contentBx .color h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.cards .contentBx .size span {
+    width: 1.5vw;
+    height: 1.5vw;
+    text-align: center;
+    font-size: 1vw;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    border-radius: 4px;
+  transition: all ease .5s;
+}
+.cards .contentBx .size span:hover{
+  background: #000;
+  color: #fff;
+}
+.cards .contentBx .color span {
+    width: 1.5vw;
+    height: 1.5vw;
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.cards .contentBx .color span:nth-child(2) {
+    background: #ffffff;
+}
+.cards .contentBx .color span:nth-child(3) {
+    background: rgb(255, 0, 0);
+}
+.cards .contentBx .color span:nth-child(4) {
+    background: rgb(0, 63, 199);
+}
+.cards .contentBx button {
+    display: inline-block;
+    padding: 0.6vw 1.1vw;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 1vw;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    border: none;
+  font-size: 1vw;
+}
+.cards:hover .contentBx button {
+    opacity: 1;
+    transform: translateY(0px);
+  cursor: none;
+    
+}
+.contentBx button:hover{
+  color: #fff;
+  background: #000000;
+  cursor: none;
+}
+.filter{
+
+    visibility: auto;
+    opacity: 0;
+    order: 1;
+}
+.cardsContent .cards.space{
+    width: 95vw;
+}
+.cards.space .imgContent{
+    display: block;
+    margin: auto;
+
+}
+.cards.space .imgContent img{
+    width: 27vw;
+    transform: translateX(-5vw) translateY(1vw);
+    transition: all ease .5s;
+}
+.cards.space:hover .imgContent img{
+    transform: translateX(20vw) translateY(1vw);
+}
+.cards.space:before{
+    
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    clip-path: circle(20vw at 90% 0%);
+    transition: 0.5s ease;
+    z-index: 0;
+  }
+.cards.space:hover:before{
+    
+    clip-path: circle(15vw at 100% 0%);
+  }
+
+.cards.space .contentBx{
+    transform: translateX(-25vw) translateY(-10vw) scale(1.2);
+}
+.cards.space .contentBx p{
+    color: #bbbbbb;
+}

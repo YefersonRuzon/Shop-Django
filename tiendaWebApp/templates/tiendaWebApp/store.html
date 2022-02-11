@@ -1,0 +1,729 @@
+{% extends "tiendaWebApp/layout.html" %}
+{% load static %}
+{% block title %}Ruzon{% endblock %}
+{% block style %} <link rel="stylesheet" href="{% static 'tiendaWebApp/css/styleStore.css' %}"> {% endblock %}
+
+
+{% block body %} 
+    <form method="get" class="formSearch">
+       <div class="inputGroup">
+        <div class="inputGroupAppend">
+        <input type="text" class="search-filter" placeholder="Search" name="search" value="">
+            <button class="btnSearchSubmit" type="submit">
+                <i class='bx bx-search' ></i>
+            </button>
+        </div>
+       </div>
+    </form>
+    <div class="cardsContent">
+
+       <div class="cardsGrid">
+        <div class="cards">
+            <p class="price">$48.99 USD</p>
+            <div class="imgContent">
+                <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop1.png' %}" alt="a pair of blue and red ASICS sneakers">
+                <h2>Nike</h2>
+                <p>Jordan</p>
+            </div>
+            <div class="contentBx">
+                
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>34</span>
+                    <span>36</span>
+                    <span>38</span>
+                    <span>40</span>
+                    <span>42</span>
+                </div>
+                <div class="color">
+                    <h3>Color:</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button> Add to Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <p class="price">$48.99 USD</p>
+            <div class="imgContent">
+                <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop2.png' %}" alt="a pair of blue and red ASICS sneakers">
+                <h2>adidas</h2>
+                <p>Origin 4</p>
+            </div>
+            <div class="contentBx">
+                
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>34</span>
+                    <span>36</span>
+                    <span>38</span>
+                    <span>40</span>
+                    <span>42</span>
+                </div>
+                <div class="color">
+                    <h3>Color:</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button> Add to Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <p class="price">$48.99 USD</p>
+            <div class="imgContent">
+                <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop3.png' %}" alt="a pair of blue and red ASICS sneakers">
+                <h2>Nike</h2>
+                <p>Flight 4</p>
+            </div>
+            <div class="contentBx">
+                
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>34</span>
+                    <span>36</span>
+                    <span>38</span>
+                    <span>40</span>
+                    <span>42</span>
+                </div>
+                <div class="color">
+                    <h3>Color:</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button> Add to Cart</button>
+            </div>
+        </div>
+        <div class="cards">
+            <p class="price">$48.99 USD</p>
+            <div class="imgContent">
+                <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop4.png' %}" alt="a pair of blue and red ASICS sneakers">
+                <div class="filter-">
+                    <h2>yeezy</h2>
+                    <p>Jordan Origin 4</p>
+                </div>
+            </div>
+            <div class="contentBx">
+                
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>34</span>
+                    <span>36</span>
+                    <span>38</span>
+                    <span>40</span>
+                    <span>42</span>
+                </div>
+                <div class="color">
+                    <h3>Color:</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button> Add to Cart</button>
+            </div>
+        </div>
+       </div>
+
+        <div class="cards space">
+            <p class="price">$48.99 USD</p>
+            <div class="imgContent">
+                <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop21.png' %}" alt="a pair of blue and red ASICS sneakers">
+                
+            </div>
+            <div class="contentBx  ">
+                
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>34</span>
+                    <span>36</span>
+                    <span>38</span>
+                    <span>40</span>
+                    <span>42</span>
+                </div>
+                <div class="color">
+                    <h3>Color:</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button> Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cardsGrid">
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop5.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Jordan</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop16.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>adidas</h2>
+                    <p>Origin 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop15.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Flight 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop7.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <div class="filter-">
+                        <h2>yeezy</h2>
+                        <p>Jordan Origin 4</p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+           </div>
+
+        <div class="cardsGrid">
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop8.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Jordan</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop10.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>adidas</h2>
+                    <p>Origin 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop14.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Flight 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop16.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <div class="filter-">
+                        <h2>yeezy</h2>
+                        <p>Jordan Origin 4</p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="cards space">
+            <p class="price">$48.99 USD</p>
+            <div class="imgContent">
+                <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop20.png' %}" alt="a pair of blue and red ASICS sneakers">
+                
+            </div>
+            <div class="contentBx  ">
+               
+                <div class="size">
+                    <h3>Size:</h3>
+                    <span>34</span>
+                    <span>36</span>
+                    <span>38</span>
+                    <span>40</span>
+                    <span>42</span>
+                </div>
+                <div class="color">
+                    <h3>Color:</h3>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <button> Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="cardsGrid">
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop11.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Jordan</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop12.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>adidas</h2>
+                    <p>Origin 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop5.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Flight 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop6.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <div class="filter-">
+                        <h2>yeezy</h2>
+                        <p>Jordan Origin 4</p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+           </div>
+
+        <div class="cardsGrid">
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop4.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Jordan</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop7.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>adidas</h2>
+                    <p>Origin 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop3.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Flight 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="sh2CardImg1" src="{% static 'tiendaWebApp/img/shop2.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <div class="filter-">
+                        <h2>yeezy</h2>
+                        <p>Jordan Origin 4</p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <div class="cardsGrid">
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop16.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Jordan</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop14.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>adidas</h2>
+                    <p>Origin 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop15.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <h2>Nike</h2>
+                    <p>Flight 4</p>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+            <div class="cards">
+                <p class="price">$48.99 USD</p>
+                <div class="imgContent">
+                    <img class="hoodie" src="{% static 'tiendaWebApp/img/shop16.png' %}" alt="a pair of blue and red ASICS sneakers">
+                    <div class="filter-">
+                        <h2>yeezy</h2>
+                        <p>Jordan Origin 4</p>
+                    </div>
+                </div>
+                <div class="contentBx">
+                    
+                    <div class="size">
+                        <h3>Size:</h3>
+                        <span>34</span>
+                        <span>36</span>
+                        <span>38</span>
+                        <span>40</span>
+                        <span>42</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color:</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <button> Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+{% endblock %}
+{% block script %} <script src="{% static 'tiendaWebApp/scripts/search-filter.js' %}"></script> {% endblock %}

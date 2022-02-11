@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Megrim&family=Oswald&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+body{
+  background: #ffffff;
+  overflow-x: hidden;
+  cursor: none;
+}
+.wrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+    z-index: 5;
+}
+#active:checked ~ .wrapper{
+  clip-path: circle(75%);
+  background: #000000;
+  z-index: 5;
+}
+.cursor {
+  width: 1.4vw;
+  height: 1.4vw;
+  border: .4vw solid rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 100ms;
+  
+  transition-timing-function: ease-out;
+  pointer-events: none;
+  z-index: 8;
+}
+.cursor::after {
+  content: "";
+  width: 1.4vw;
+  height: 1.4vw;
+  position: absolute;
+  border: .4vw solid rgb(0, 0, 0);
+  border-radius: 50%;
+  opacity: .9;
+  top: -9px;
+  left: -9px;
+  z-index: 8;
+}
+@keyframes cursorAnim3 {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.5);
+  }
+  100% {
+      transform: scale(1);
+      
+  }
+}
+.expand {
+  animation: cursorAnim3 .2s forwards;
+  border: .3vw solid rgb(0, 225, 233);
+}
+.menu-btn{
+  position: fixed;
+  z-index: 4;
+  right: 1vw;
+  top: 1vw;
+  height: 3.4vw;
+  width: 3.4vw;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: none;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  z-index: 6;
+}
+.menu-btn:hover{
+  background-color: #111;
+}
+.menu-btn > span{
+  height: 0.22vw;
+  border-radius: 20px;
+  background: rgb(0, 0, 0);
+  transition: all ease-in-out .5s;
+  z-index: 6;
+  position: absolute;
+  top:1.5vw;
+  right: 0.94vw;
+}
+.menu-btn > span:nth-child(1){
+  width: 1.5vw;
+  transform: translateY(-.47vw);
+}
+.menu-btn > span:nth-child(2){
+  width:1.5vw;
+}
+.menu-btn > span:nth-child(3){
+  width: 1.5vw;
+  transform: translateY(.47vw);
+}
+.menu-btn:hover > span{
+    background: #ffffff;
+}
+
+
+
+#active:checked ~ .menu-btn{
+  color: #fff;
+}
+#active:checked ~ .menu-btn > span{
+    width: 1.8vw;
+    background: #fff;
+}
+#active:checked ~ .menu-btn > span:nth-child(1){
+    transform: translateY(0px) rotate(45deg);
+}
+#active:checked ~ .menu-btn > span:nth-child(3){
+    transform: translateY(0px) rotate(-45deg);
+}
+#active:checked ~ .menu-btn > span:nth-child(2){
+    transform: translateX(50px);
+}
+.wrapper ul{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+.wrapper ul li{
+  margin: 15px 0;
+}
+.wrapper ul li a{
+  text-decoration: none;
+  font-size: 2.5vw;
+  font-weight: 500;
+  padding: 5px 30px;
+  color: rgba(255, 255, 255, 0);
+  border-radius: 50px;
+  position: relative;
+  line-height: 50px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: none;
+}
+
+
+.wrapper ul li a::before,
+.wrapper ul li a::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    margin-left: -20px;
+    block-size: border-box;
+    padding: 0px 20px;
+    transition: .5s;
+    color: #cccccc;
+    font-weight: bolder;
+    text-shadow: #cccccc -1px 1px;
+
+
+}
+.wrapper ul li a::before{
+  clip-path: polygon(100% 3%, 100% 0, 0 0, 0 100%, 4% 100%);
+}
+.wrapper ul li a:hover::before{
+    color: #007979;
+    transform: translate(-8px,-1px) rotate(-4deg);
+    text-shadow: #007979 -1px 1px;
+    
+}
+.wrapper ul li a::after{
+    clip-path: polygon(97% 0, 100% 0, 100% 100%, 0 100%, 0 96%);
+}
+.wrapper ul li a:hover:after{
+    color: #007979;
+    transform: translate(8px, 3px) rotate(-4deg);
+    text-shadow: #007979 -1px 1px;
+    
+   
+}
+
+
+input[type="checkbox"]{
+  display: none;
+}
+
+.nav-bar{
+  width: 100vw;
+  height: 5vw;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  min-height: 48px;
+  overflow: hidden;
+  display: flex; 
+  z-index: 5;
+}
+
+.nav-bar > img{
+
+  width: 8%;
+  display: block;
+  margin-left: 20px;
+  
+  margin-top: 5px;
+  
+  
+}
+.nav-text{
+  text-align: center;
+  height: 2vw;
+  cursor:  none;
+  display: block;
+  margin: auto 0;
+  overflow: hidden;
+  transform: translateY(.5vw);
+}
+.nav-text p{
+  font-size: 1.3vw;
+  margin-top: -.5vw;
+  color: rgb(0, 0, 0);
+  animation: 10s cubic-bezier(0.175, 0.885, 0.32, 1.275) navText infinite;
+  animation-delay: 5s;
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+@keyframes navText {
+  0%{
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  9%{
+    opacity: 1;
+  }
+  10%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  60%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  95%{
+    transform: translateX(-200px);
+    
+  }
+  100%{
+    transform: translateX(-200px);
+  }
+}
+.footer{
+  background-color: #252525;
+  padding-top: 1vw;
+  box-shadow: #a8a8a8 0px -15px 15px;
+}
+.footer-greeting{
+  display: block;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  margin-top: 2vw;
+}
+.footer-greeting h3{
+  font-size: 1.7vw;
+  color: #fff;
+}
+.footer-greeting p{
+  color: #cccccc;
+  margin-top: .2vw;
+  font-size: 1vw;
+}
+.footerLists{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: min-content;
+  margin-top: 7vw;
+  padding-bottom: 6vw;
+}
+.footerLists ul{
+  display: block;
+  margin: auto;
+  list-style: none;
+  color: #a8a8a8;
+}
+.footerLists ul h2{
+  color: #fff;
+  font-size: 1.5vw;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-2vw);
+}
+.footerLists ul h2::after{
+  content: '';
+  width: 8vw;
+  height: .15vw;
+  border: none;
+  background: #fff;
+  margin-bottom: 1vw;
+  transition: all ease .5s;
+  position: absolute;
+  top: 2.5vw;
+}
+.footerLists ul:hover h2::after{
+  width: 9.2vw;
+}
+.footerLists ul a{
+  color: #a8a8a8;
+  text-decoration: none;
+  cursor: none;
+}
+.footerLists ul li{
+  margin-top: .5vw;
+  font-size: 1.2vw;
+  transition: all ease .5s;
+}
+.footerLists ul li:hover {
+  transform: translateX(1vw);
+  color: #fff;
+}
+
+.content{
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  
+
+}

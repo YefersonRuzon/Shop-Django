@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'tiendaWebApp/css/style.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    {% block style %}{% endblock %}
+</head>
+<body>
+    <div class="cursor"></div>
+    <input type="checkbox" id="active">
+    <nav class="nav-bar">
+        <img src="{% static 'tiendaWebApp/img/logoB.png' %}" alt="LogoTiendaOnline">
+        <div class="nav-text">
+            <p>style and fashion</p>
+        </div>
+    </nav>
+    
+    <label for="active" class="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="wrapper">
+        <ul>
+            <li><a href="{% url 'Home' %}" data-text="Home">Home</a></li>
+            <li><a href="{% url 'store' %}" data-text="Store">Store</a></li>
+            <li><a href="{% url 'more' %}" data-text="more">More</a></li>
+            <li><a href="{% url 'contact' %}" data-text="Contact">Contact</a></li>
+        </ul>
+    </div>
+    
+
+
+<div class="content">
+    {% block body %} {% endblock %}
+</div>
+<footer class="footer">
+    <div class="footer-greeting">
+        <h3>style and fashion</h3>
+        <p>Do you have any design in mind? we can make it come true!</p>
+    </div>
+    <div class="footerLists">
+        
+        <ul>
+            <h2>lorem title</h2>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+        </ul>
+        <ul>
+            <h2>lorem title</h2>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+        </ul>
+        <ul>
+            <h2>lorem title</h2>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+        </ul>
+        <ul>
+            <h2>lorem title</h2>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+            <a href=""><li>lorem</li></a>
+        </ul>
+        
+    </div>
+</footer>
+{% block script %} {% endblock %}
+<script src="{% static 'tiendaWebApp/scripts/script.js' %}"></script>
+</body>
+</html>
